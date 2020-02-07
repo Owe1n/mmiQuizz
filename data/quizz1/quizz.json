@@ -1,0 +1,38 @@
+{
+    "questions":[
+        {
+            "id":1,
+            "titre":"yyoyoyoyo",
+            "img":"eerfzer.jpg",
+            "idReponse":3,
+            "reponses":[
+                {
+                    "id": 1,
+                    "titre":"Le titei"
+                },
+                {
+                    "id": 2,
+                    "titre":"Le titei"
+                },
+                
+                {
+                    "id": 3,
+                    "titre":"Le titei"
+                },
+                
+                {
+                    "id": 4,
+                    "titre":"Le titei"
+                },
+                
+                {
+                    "id": 5,
+                    "titre":"Le titei"
+                }
+                
+
+
+            ]
+        }
+    ]
+}

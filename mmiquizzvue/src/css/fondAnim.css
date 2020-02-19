@@ -1,0 +1,54 @@
+
+.elem1 {
+    animation:rot 50s linear infinite, mouv1 30s linear;
+    transform-origin: 50% 25%;
+}
+
+.elem2 {
+    animation:rot 120s linear infinite;
+    transform-origin: 70% 40%;
+}
+
+.elem3 {
+    animation:rot 120s reverse infinite;
+    transform-origin: 25% 75%;
+}
+
+.elem4 {
+    animation:rot 111.8s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+.elem5 {
+    animation:rot 111.8s linear infinite;
+    transform-origin: 30% 70%;
+}
+
+.elem6 {
+    animation:rot 50s reverse infinite;
+    transform-origin: 50% 80%;;
+}
+
+.elem7 {
+    animation:rot 111.8s linear infinite;
+    transform-origin: 30% 70%;;
+}
+
+.elem8 {
+    animation:rot 111.8s linear infinite;
+    transform-origin: 50% 20%;;
+}
+
+
+@keyframes rot {
+    0% {
+
+    }
+  
+    100% {
+        transform: rotate(360deg)
+     }
+
+}
+
+

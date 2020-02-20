@@ -3,7 +3,7 @@
     <div class="d-flex align-items-end quiz-title-bloc" v-if="theme">
       <ul>
         <li v-for="quiz in theme.listeQuiz" :key="quiz.id">
-          <a @click href="">{{quiz.titre}}</a>
+          <a  href="">{{quiz.titre}}</a>
         </li>
       </ul>
 

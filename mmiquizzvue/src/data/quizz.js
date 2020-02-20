@@ -51,10 +51,10 @@ const list_theme = [
 ];
 
 export function getTheme(id) {
-    return list_theme.find(item => item.id === id);
+    return list_theme.find(item => item.id == id);
 }
 
 
 export function getQuiz(id) {
-    return list_theme.listeQuiz.find(item => item.id === id);
+    return list_theme.listeQuiz.find(item => item.id == id);
 }

@@ -4,19 +4,15 @@
     <button
       class="btn btn-primary d-block"
       @click="montrerListe = !montrerListe"
-    >
-      {{ theme ? theme.titre : "Choisir un thème..." }}
-    </button>
+    >{{ theme ? theme.titre : "Choisir un thème..." }}</button>
     <div class="btn-group-vertical btn-group-lg" v-if="montrerListe">
       <button
         type="button"
         class="btn btn-secondary"
-        v-for="theme in listeTheme"
+        v-for="theme in list_theme"
         :key="theme.id"
         @click="selectTheme(theme)"
-      >
-        {{ theme.titre }}
-      </button>
+      >{{ theme.titre }}</button>
     </div>
   </div>
 </template>
@@ -24,7 +20,7 @@
 <script>
 export default {
   name: "ThemeSelect",
-  props: ["listeTheme"],
+  props: ["list_theme"],
   data: function() {
     return {
       theme: null,

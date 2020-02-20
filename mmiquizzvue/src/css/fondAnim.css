@@ -1,3 +1,38 @@
+.fondAnim {
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.divAccueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.start {
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 20px;
+    width: 70px;
+    height: 40px;
+}
+
+.start:hover {
+    border: none;
+
+}
+
 
 .elem1 {
     animation:rot 50s linear infinite, mouv1 30s linear;
@@ -50,5 +85,7 @@
      }
 
 }
+
+
 
 

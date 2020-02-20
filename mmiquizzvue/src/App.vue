@@ -2,7 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
    
-    <listeQuiz idTheme="2" /> 
+    <listeQuiz @select-quiz="onSelectQuiz" idTheme="2" /> 
     
   </div>
 </template>
@@ -14,10 +14,20 @@ import listeQuiz from './components/listeQuiz.vue'
 
 export default {
   name: 'App',
+  data: function(){
+    return {
+      idQuiz : null,
+    }
+  },
   components: {
     //HelloWorld,
     listeQuiz,
     
+  },
+  methods:{
+    onSelectQuiz : function(idQuiz){
+      this.idQuiz = idQuiz;
+    }
   }
 }
 </script>

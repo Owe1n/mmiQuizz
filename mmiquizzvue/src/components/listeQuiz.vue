@@ -3,7 +3,7 @@
     <div class="d-flex align-items-end quiz-title-bloc" v-if="theme">
       <ul>
         <li v-for="quiz in theme.listeQuiz" :key="quiz.id">
-          <a  href="">{{quiz.titre}}</a>
+          <a  @click="selectQuizz(quiz.id)" href="">{{quiz.titre}}</a>
         </li>
       </ul>
 
@@ -25,6 +25,11 @@ export default {
     theme: function() {
       console.log(getTheme(this.idTheme))
       return getTheme(this.idTheme);
+    }
+  },
+  methods: {
+    selectQuiz(quizId) {
+      this.$emit("select-quiz", quizId.id);
     }
   }
 };

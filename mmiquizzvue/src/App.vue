@@ -3,7 +3,8 @@
      
     <themeSelect @select-theme="onSelectTheme" :list_theme="listeThemes"/>
     <listeQuiz @select-quiz="onSelectQuiz" :idTheme="idTheme" />
-    
+    <quiz :idQuiz="idQuiz" :idTheme="idTheme"/>
+
   </div>
 </template>
 
@@ -11,13 +12,15 @@
 //import HelloWorld from './components/HelloWorld.vue'
 import listeQuiz from './components/listeQuiz.vue'
 import themeSelect from  './components/ThemeSelect.vue'
+import quiz from './components/Quiz.vue'
 import { get_listTheme } from "./data/quizz";
+
 export default {
   name: 'App',
   data: function(){
     return {
       idTheme :"0",
-      idQuiz : "test",
+      idQuiz : "0",
       
   
     }
@@ -25,7 +28,8 @@ export default {
   components: {
     //HelloWorld,
     listeQuiz,
-    themeSelect
+    themeSelect,
+    quiz
     
     
   },
@@ -37,14 +41,18 @@ export default {
   },
   methods:{
     onSelectQuiz : function(idQuiz){
+      
       this.idQuiz = idQuiz;
+
     },
     onSelectTheme : function(idTheme){
+   
       this.idTheme = idTheme;
       
     }
   }
 }
+
 </script>
 
 <style>

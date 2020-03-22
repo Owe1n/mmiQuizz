@@ -30,7 +30,7 @@ export default {
   methods: {
     selectQuiz(quizId) {
       event.preventDefault();
-      this.$emit("select-quiz", quizId.id);
+      this.$emit("select-quiz",quizId);
     }
   }
 };

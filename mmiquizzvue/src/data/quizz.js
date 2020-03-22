@@ -21,11 +21,11 @@ export const list_theme = [
         listeQuiz: [
             {
                 id: 1,
-                titre: "Quiz 1 ",
+                titre: "Les cours 1 ",
             },
             {
                 id: 2,
-                titre: "Quiz 2 ",
+                titre: "Les cours 2 ",
             }
 
 
@@ -37,11 +37,11 @@ export const list_theme = [
         listeQuiz: [
             {
                 id: 1,
-                titre: "Quiz 1 ",
+                titre: "L'asso 1 ",
             },
             {
                 id: 2,
-                titre: "Quiz 2 ",
+                titre: "L'asso 2 ",
             }
 
 
@@ -59,6 +59,6 @@ export function getQuiz(id) {
     return list_theme.listeQuiz.find(item => item.id == id);
 }
 
-export function get_listTheme(){
+export function get_listTheme() {
     return list_theme;
 }

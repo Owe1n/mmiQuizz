@@ -3,7 +3,7 @@
     <div class="d-flex align-items-end quiz-title-bloc" v-if="theme">
       <ul>
         <li v-for="quiz in theme.listeQuiz" :key="quiz.id">
-          <a  @click="selectQuizz(quiz.id)" href="">{{quiz.titre}}</a>
+          <a  @click="selectQuiz(quiz.id)" href="">{{quiz.titre}}</a>
         </li>
       </ul>
 
@@ -29,6 +29,7 @@ export default {
   },
   methods: {
     selectQuiz(quizId) {
+      event.preventDefault();
       this.$emit("select-quiz", quizId.id);
     }
   }

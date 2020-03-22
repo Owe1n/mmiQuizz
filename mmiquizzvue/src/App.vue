@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-   
-    <listeQuiz @select-quiz="onSelectQuiz" idTheme="2" /> 
+     
+    <themeSelect @select-theme="onSelectTheme" :list_theme="listeThemes"/>
+    <listeQuiz @select-quiz="onSelectQuiz" :idTheme="idTheme" />
     
   </div>
 </template>
@@ -10,23 +10,38 @@
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
 import listeQuiz from './components/listeQuiz.vue'
-//import themeSelect from  './components/ThemeSelect.vue'
-
+import themeSelect from  './components/ThemeSelect.vue'
+import { get_listTheme } from "./data/quizz";
 export default {
   name: 'App',
   data: function(){
     return {
-      idQuiz : null,
+      idTheme :"0",
+      idQuiz : "test",
+      
+  
     }
   },
   components: {
     //HelloWorld,
     listeQuiz,
+    themeSelect
     
+    
+  },
+  computed:{
+    listeThemes: function() {
+      console.log(get_listTheme())
+      return get_listTheme();
+    }
   },
   methods:{
     onSelectQuiz : function(idQuiz){
       this.idQuiz = idQuiz;
+    },
+    onSelectTheme : function(idTheme){
+      this.idTheme = idTheme;
+      
     }
   }
 }

@@ -1,0 +1,104 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "titre": "Question 1 - Quelle est la salle mac parmis ces salles de l'IUT ?  ",
+            "img": "img1.jpg",
+            "idReponse": 2,
+            "reponses": [
+                {
+                    "id": 1,
+                    "titre": "208"
+                },
+                {
+                    "id": 2,
+                    "titre": "317"
+                },
+                {
+                    "id": 3,
+                    "titre": "315"
+                },
+                {
+                    "id": 4,
+                    "titre": "110"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "titre": "Question 2 - Dans quelle salle fait-il le plus froid ?   ",
+            "img": "img2.jpg",
+            "idReponse": 2,
+            "reponses": [
+                {
+                    "id": 1,
+                    "titre": "08"
+                },
+                {
+                    "id": 2,
+                    "titre": "04"
+                },
+                {
+                    "id": 3,
+                    "titre": "16"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "titre": "Question 3 - De quelle couleur doit être notre stylo lors d'un QCM d'EJEMO ? ",
+            "img": "img3.jpg",
+            "idReponse": 4,
+            "reponses": [
+                {
+                    "id": 1,
+                    "titre": "Bleu"
+                },
+                {
+                    "id": 2,
+                    "titre": "Rouge"
+                },
+                {
+                    "id": 3,
+                    "titre": "Vert"
+                },
+                {
+                    "id": 4,
+                    "titre": "Noir"
+                },
+                {
+                    "id": 5,
+                    "titre": "Multicolore"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "titre": "Question 4 - Que faut-il ne surout pas oublier lorsqu'on a cours avec un intervenant ?",
+            "img": "img4.jpg",
+            "idReponse": 3,
+            "reponses": [
+                {
+                    "id": 1,
+                    "titre": "Ses cours"
+                },
+                {
+                    "id": 2,
+                    "titre": "Son dictionnaire"
+                },
+                {
+                    "id": 3,
+                    "titre": "Sa musique et ses écouteurs histoire d'avoir un bruit de fond quand même"
+                },
+                {
+                    "id": 4,
+                    "titre": "Sa plante"
+                },
+                {
+                    "id": 5,
+                    "titre": "oui"
+                }
+            ]
+        }
+    ]
+}

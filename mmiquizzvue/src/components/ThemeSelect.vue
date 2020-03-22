@@ -1,8 +1,7 @@
 <template>
   <div class="container">
-    <h1 class="theme-title m-5">LE SUPER QUIZZ MMI</h1>
     <div class="row">
-      <div id="card" class="col-6">
+      <div id="card" class="col-12 p-0">
         <h3 class="text-left m-3">Thème</h3>
         <button
           id="boutton"
@@ -68,6 +67,12 @@ h1 {
 h3 {
   font-weight: 600;
   color: white;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700,800&display=swap%27");
+
+.container {
+  font-family: "Raleway", sans-serif;
 }
 
 #boutton {

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <div id="card" class="col-6 d-flex quiz-title-bloc flex-column" v-if="theme">
+      <div id="card" class="col-12 p-0 d-flex quiz-title-bloc flex-column" v-if="theme">
         <h3 class="text-left m-3">Liste Quizz</h3>
         <ul>
           <li class="mt-n1" v-for="quiz in theme.listeQuiz" :key="quiz.id">
@@ -30,7 +30,7 @@ export default {
   methods: {
     selectQuiz(quizId) {
       event.preventDefault();
-      this.$emit("select-quiz",quizId);
+      this.$emit("select-quiz", quizId);
     }
   }
 };

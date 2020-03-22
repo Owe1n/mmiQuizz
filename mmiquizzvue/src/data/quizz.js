@@ -55,8 +55,8 @@ export function getTheme(id) {
 }
 
 
-export function getQuiz(id) {
-    return list_theme.listeQuiz.find(item => item.id == id);
+export function getQuiz(idTheme,idQuizz) {
+    return list_theme.listeQuiz.find(item => item.id == idTheme).find(item => item.id == idQuizz);
 }
 
 export function get_listTheme() {
